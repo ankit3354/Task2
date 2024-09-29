@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap");
+
+.Login-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 80px;
+  font-family: "Spicy Rice", serif;
+  color: white;
+  text-align: center;
+}
+
+.login-signup {
+  background-color: rgb(4, 25, 44);
+  padding: 80px;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.login-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  gap: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.login-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.login {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+
+.sign-btn,
+.login-btn {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(0, 125, 227);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+.login-btn:hover,
+.sign-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 960px) {
+  .title {
+    font-size: 72px;
+  }
+  .Login-container {
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+  }
+  .box {
+    width: 100vw;
+  }
+  .login-text {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Login-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .title {
+    font-size: 44px;
+  }
+  .login-signup {
+    padding: 40px 30px;
+    margin: 0px 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Login-container {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .login-signup {
+    padding: 20px 10px;
+    width: 100vw;
+  }
+  .login {
+    flex-wrap: wrap;
+  }
+
+  .sign-btn,
+  .login-btn {
+    width: 100vw;
+  }
+}

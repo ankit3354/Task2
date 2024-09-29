@@ -1,0 +1,92 @@
+.profile-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.profile p {
+  font-size: 19px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-wrapper img {
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.logout {
+  text-align: right;
+}
+
+.profile-wrapper {
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  text-align: left;
+  font-family: monospace;
+}
+
+.profile-wrapper h1,
+.profile-wrapper h2 {
+  font-size: 28px;
+}
+
+.profile-wrapper h1 span,
+.profile-wrapper h2 span {
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: rgb(231, 29, 29);
+  padding: 10px;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 600;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .profile-wrapper h1,
+  .profile-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .profile-wrapper h1 span,
+  .profile-wrapper h2 span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profile-wrapper h1,
+  .profile-wrapper h2 {
+    font-size: 16px;
+  }
+
+  .logout-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .profile-container {
+    margin-top: 2px;
+  }
+
+  .profile-wrapper h2 span {
+    font-size: 14px;
+  }
+
+  .profile p {
+    font-size: 12px;
+  }
+}
